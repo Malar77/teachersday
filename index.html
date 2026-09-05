@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Teachers' Day 2026</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HERO SECTION -->
+    <main class="hero">
+
+        <div class="badge">✦ September 5, 2026 ✦</div>
+
+        <h1>
+            Happy <span>Teachers' Day</span>
+        </h1>
+
+        <p class="subtitle">
+            To the teachers who inspire us to dream,
+            encourage us to grow, and guide us toward a better future.
+        </p>
+
+        <div class="quote">
+            “A teacher takes a hand, opens a mind,
+            and touches a heart.”
+        </div>
+
+        <button class="celebrate-btn" id="celebrateBtn">
+            Celebrate Our Teachers 💐
+        </button>
+
+    </main>
+    <!-- GIFT SECTION -->
+<section class="gift-section">
+
+    <div class="gift-heading">
+        <p>🎁 A LITTLE SURPRISE</p>
+        <h2>Something Special <span>For You</span></h2>
+        <p>Tap the gift to discover a message from the heart.</p>
+    </div>
+
+    <div class="gift-area">
+
+        <button class="gift-box" id="giftBox" aria-label="Open Teachers' Day gift">
+
+            <div class="gift-lid">
+                <div class="lid-ribbon"></div>
+            </div>
+
+            <div class="gift-body">
+                <div class="vertical-ribbon"></div>
+                <div class="horizontal-ribbon"></div>
+
+                <div class="gift-bow">
+                    <div class="bow-left"></div>
+                    <div class="bow-right"></div>
+                    <div class="bow-center"></div>
+                </div>
+            </div>
+
+        </button>
+
+        <p class="tap-message" id="tapMessage">
+            👆 Tap the gift box
+        </p>
+
+    </div>
+
+
+    <!-- SURPRISE MESSAGE -->
+
+    <div class="surprise" id="surprise">
+
+        <div class="surprise-card">
+
+            <button class="close-surprise" id="closeSurprise">
+                ×
+            </button>
+
+            <div class="surprise-icon">💐</div>
+
+            <p class="small-title">A MESSAGE FROM THE HEART</p>
+
+            <h3>Thank You, Teachers! ❤️</h3>
+
+            <p class="surprise-text">
+                You don't just teach lessons from books.
+                You teach us to dream, to believe, and to become
+                the best version of ourselves.
+            </p>
+
+            <div class="thank-you-line">
+                ✨ Your guidance makes a difference. ✨
+            </div>
+
+            <button class="continue-btn" id="continueBtn">
+                Keep Spreading Positivity 💖
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- TEACHERS SECTION -->
+    <section class="teachers-section" id="teachers">
+
+        <div class="section-badge">🎓 OUR INSPIRATIONS</div>
+
+        <h2>
+            Meet Our <span>Amazing Teachers</span>
+        </h2>
+
+        <p class="section-subtitle">
+            The people who guide us, inspire us, and help us become
+            better versions of ourselves.
+        </p>
+
+
+        <div class="teacher-container">
+
+            <!-- Teacher Card 1 -->
+            <div class="teacher-card">
+
+                <div class="teacher-icon">
+                    👩‍🏫
+                </div>
+
+                <h3>Teacher Name</h3>
+
+                <p class="subject">
+                    Mathematics
+                </p>
+
+                <p class="teacher-message">
+                    “Thank you for making every lesson meaningful
+                    and inspiring us to keep learning.”
+                </p>
+
+                <button class="appreciate-btn" data-teacher="Mathematics Teacher">
+                    ❤️ Appreciate
+                </button>
+
+            </div>
+
+
+            <!-- Teacher Card 2 -->
+            <div class="teacher-card">
+
+                <div class="teacher-icon">
+                    👨‍🏫
+                </div>
+
+                <h3>Teacher Name</h3>
+
+                <p class="subject">
+                    Computer Science
+                </p>
+
+                <p class="teacher-message">
+                    “Your guidance has helped us believe in ourselves
+                    and our dreams.”
+                </p>
+
+                <button class="appreciate-btn" data-teacher="Computer Science Teacher">
+                    ❤️ Appreciate
+                </button>
+
+            </div>
+
+
+            <!-- Teacher Card 3 -->
+            <div class="teacher-card">
+
+                <div class="teacher-icon">
+                    👩‍🏫
+                </div>
+
+                <h3>Teacher Name</h3>
+
+                <p class="subject">
+                    English
+                </p>
+
+                <p class="teacher-message">
+                    “Thank you for encouraging us to learn,
+                    explore and never give up.”
+                </p>
+
+                <button class="appreciate-btn" data-teacher="English Teacher">
+                    ❤️ Appreciate
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</section>
+<!-- APPRECIATION POPUP -->
+
+<div class="appreciation-modal" id="appreciationModal">
+
+    <div class="appreciation-box">
+
+        <button class="modal-close" id="modalClose">
+            ×
+        </button>
+
+        <div class="modal-icon">
+            💖
+        </div>
+
+        <p class="modal-label">
+            A LITTLE THANK YOU
+        </p>
+
+        <h2>
+            For <span id="selectedTeacher">Your Teacher</span>
+        </h2>
+
+        <p class="modal-intro">
+            Tell your teacher how much they mean to you.
+        </p>
+
+
+        <!-- FORM -->
+
+        <form id="appreciationForm">
+
+            <label for="appreciationName">
+                Your Name
+            </label>
+
+            <input
+                type="text"
+                id="appreciationName"
+                placeholder="Enter your name"
+                required
+            >
+
+
+            <label for="appreciationMessage">
+                Your Message
+            </label>
+
+            <textarea
+                id="appreciationMessage"
+                placeholder="Write something from your heart..."
+                rows="4"
+                maxlength="250"
+                required
+            ></textarea>
+
+            <div class="modal-count">
+                <span id="modalCount">0</span>/250
+            </div>
+
+
+            <button type="submit" class="modal-send">
+                💐 Send Thank You
+            </button>
+
+        </form>
+
+
+        <!-- SUCCESS MESSAGE -->
+
+        <div class="appreciation-success" id="appreciationSuccess">
+
+            <div class="success-icon">
+                🌸
+            </div>
+
+            <h3>Thank You! ❤️</h3>
+
+            <p>
+                <strong id="successName"></strong>
+            </p>
+
+            <p class="success-for">
+                Your message for
+                <strong id="successTeacher"></strong>
+            </p>
+
+            <div class="success-message" id="successMessage"></div>
+
+            <p class="success-footer">
+                ✨ Your words can make a teacher's day brighter. ✨
+            </p>
+
+            <button class="modal-done" id="modalDone">
+                Done 💖
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+    <script src="script.js"></script>
+
+</body>
+</html>

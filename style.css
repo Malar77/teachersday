@@ -1,0 +1,1489 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+
+    background-image: url("images/teachers.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: #29233b;
+}
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    background-image: url("images/teacher.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+.badge {
+    background: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: clamp(45px, 7vw, 85px);
+    line-height: 1.05;
+
+    max-width: 900px;
+}
+
+h1 span {
+    display: block;
+
+    background: linear-gradient(90deg, #8b5cf6, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    max-width: 650px;
+
+    margin-top: 25px;
+
+    font-size: 19px;
+    line-height: 1.7;
+
+    color: #625d70;
+}
+
+.quote {
+    max-width: 550px;
+
+    margin-top: 30px;
+    padding: 20px 30px;
+
+    background: rgba(255, 255, 255, 0.65);
+
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 18px;
+
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-style: italic;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.celebrate-btn {
+    margin-top: 35px;
+
+    border: none;
+    border-radius: 50px;
+
+    padding: 16px 30px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    color: white;
+
+    background: linear-gradient(90deg, #8b5cf6, #ec4899);
+
+    cursor: pointer;
+
+    box-shadow: 0 10px 25px rgba(139, 92, 246, 0.3);
+
+    transition: 0.3s;
+}
+
+.celebrate-btn:hover {
+    transform: translateY(-4px) scale(1.03);
+
+    box-shadow: 0 15px 35px rgba(139, 92, 246, 0.4);
+}
+/* ================================
+   TEACHERS SECTION
+================================ */
+
+.teachers-section {
+    min-height: 100vh;
+
+    padding: 100px 30px;
+
+    text-align: center;
+
+    background:
+        radial-gradient(circle at top right, #f6d7ff, transparent 30%),
+        radial-gradient(circle at bottom left, #fff2d8, transparent 30%),
+        #fffaff;
+}
+
+.section-badge {
+    display: inline-block;
+
+    padding: 9px 18px;
+
+    border-radius: 30px;
+
+    background: white;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    color: #7c3aed;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+
+    margin-bottom: 20px;
+}
+
+.teachers-section h2 {
+    font-size: clamp(38px, 5vw, 60px);
+
+    color: #29233b;
+
+    line-height: 1.2;
+}
+
+.teachers-section h2 span {
+    background: linear-gradient(90deg, #8b5cf6, #ec4899);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-subtitle {
+    max-width: 650px;
+
+    margin: 20px auto 50px;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #625d70;
+}
+
+
+/* TEACHER CARDS */
+
+.teacher-container {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.teacher-card {
+    padding: 35px 25px;
+
+    background: rgba(255, 255, 255, 0.8);
+
+    border: 1px solid rgba(255, 255, 255, 0.9);
+
+    border-radius: 25px;
+
+    box-shadow: 0 15px 40px rgba(50, 30, 80, 0.08);
+
+    transition: 0.3s;
+}
+
+.teacher-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 20px 45px rgba(50, 30, 80, 0.14);
+}
+
+
+/* TEACHER ICON */
+
+.teacher-icon {
+    width: 90px;
+    height: 90px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: linear-gradient(135deg, #f3e8ff, #fce7f3);
+
+    font-size: 45px;
+}
+
+
+/* TEACHER NAME */
+
+.teacher-card h3 {
+    font-size: 23px;
+
+    color: #29233b;
+
+    margin-bottom: 8px;
+}
+
+
+/* SUBJECT */
+
+.subject {
+    font-size: 15px;
+
+    font-weight: bold;
+
+    color: #8b5cf6;
+
+    margin-bottom: 18px;
+}
+
+
+/* MESSAGE */
+
+.teacher-message {
+    color: #625d70;
+
+    font-family: Georgia, serif;
+
+    font-style: italic;
+
+    line-height: 1.6;
+
+    min-height: 80px;
+}
+
+
+/* APPRECIATE BUTTON */
+
+.appreciate-btn {
+    margin-top: 20px;
+
+    padding: 11px 20px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #fff0f6;
+
+    color: #e84393;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.appreciate-btn:hover {
+    transform: scale(1.05);
+
+    background: #ffe0ed;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+    .teacher-container {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+    }
+
+}
+/* =================================
+   GIFT SECTION
+================================= */
+
+.gift-section {
+    min-height: 100vh;
+
+    padding: 100px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        radial-gradient(circle at top left, #fce7f3, transparent 35%),
+        radial-gradient(circle at bottom right, #ede9fe, transparent 35%),
+        #fffaff;
+}
+
+.gift-heading p:first-child {
+    color: #8b5cf6;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+}
+
+.gift-heading h2 {
+    font-size: clamp(35px, 5vw, 55px);
+
+    color: #29233b;
+
+    margin-bottom: 15px;
+}
+
+.gift-heading h2 span {
+    background: linear-gradient(90deg, #8b5cf6, #ec4899);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gift-heading > p:last-child {
+    color: #625d70;
+
+    font-size: 17px;
+}
+
+
+/* =================================
+   GIFT AREA
+================================= */
+
+.gift-area {
+    margin-top: 70px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gift-box {
+    position: relative;
+
+    width: 190px;
+    height: 180px;
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    transition: transform 0.3s ease;
+
+    outline: none;
+}
+
+.gift-box:hover {
+    transform: translateY(-8px) scale(1.03);
+}
+
+
+/* =================================
+   GIFT BODY
+================================= */
+
+.gift-body {
+    position: absolute;
+
+    left: 15px;
+    bottom: 0;
+
+    width: 160px;
+    height: 125px;
+
+    border-radius: 8px;
+
+    background: linear-gradient(
+        135deg,
+        #ff8acb,
+        #ec4899
+    );
+
+    box-shadow:
+        0 18px 35px rgba(236, 72, 153, 0.25);
+
+    overflow: visible;
+}
+
+
+/* Vertical ribbon */
+
+.vertical-ribbon {
+    position: absolute;
+
+    left: 67px;
+
+    top: 0;
+
+    width: 26px;
+    height: 100%;
+
+    background: #fbbf24;
+}
+
+
+/* Horizontal ribbon */
+
+.horizontal-ribbon {
+    position: absolute;
+
+    left: 0;
+    top: 50px;
+
+    width: 100%;
+    height: 25px;
+
+    background: #fbbf24;
+}
+
+
+/* =================================
+   GIFT LID
+================================= */
+
+.gift-lid {
+    position: absolute;
+
+    left: 5px;
+    top: 35px;
+
+    width: 180px;
+    height: 42px;
+
+    border-radius: 8px;
+
+    background: linear-gradient(
+        135deg,
+        #f472b6,
+        #db2777
+    );
+
+    z-index: 5;
+
+    box-shadow:
+        0 10px 20px rgba(236, 72, 153, 0.25);
+
+    transform-origin: left bottom;
+
+    transition:
+        transform 0.8s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+
+/* Lid ribbon */
+
+.lid-ribbon {
+    position: absolute;
+
+    left: 77px;
+    top: 0;
+
+    width: 26px;
+    height: 42px;
+
+    background: #fbbf24;
+}
+
+
+/* =================================
+   BOW
+================================= */
+
+.gift-bow {
+    position: absolute;
+
+    left: 50%;
+
+    top: -48px;
+
+    transform: translateX(-50%);
+
+    z-index: 10;
+}
+
+.bow-left,
+.bow-right {
+    position: absolute;
+
+    width: 48px;
+    height: 35px;
+
+    background: #ec4899;
+
+    border: 3px solid #db2777;
+
+    border-radius: 50% 50% 10% 50%;
+}
+
+.bow-left {
+    right: 8px;
+
+    transform: rotate(25deg);
+}
+
+.bow-right {
+    left: 8px;
+
+    transform: scaleX(-1) rotate(25deg);
+}
+
+.bow-center {
+    position: absolute;
+
+    left: 50%;
+    top: 12px;
+
+    width: 25px;
+    height: 25px;
+
+    transform: translateX(-50%);
+
+    border-radius: 50%;
+
+    background: #fbbf24;
+
+    z-index: 3;
+}
+
+
+/* =================================
+   TAP MESSAGE
+================================= */
+
+.tap-message {
+    margin-top: 25px;
+
+    color: #8b5cf6;
+
+    font-weight: bold;
+
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+
+}
+
+
+/* =================================
+   OPEN GIFT
+================================= */
+
+.gift-box.open .gift-lid {
+    transform:
+        translate(-25px, -55px)
+        rotate(-18deg);
+}
+
+.gift-box.open {
+    animation: giftOpen 0.6s ease;
+}
+
+@keyframes giftOpen {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+
+/* =================================
+   SURPRISE OVERLAY
+================================= */
+
+.surprise {
+    position: fixed;
+
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(41, 35, 59, 0.65);
+
+    backdrop-filter: blur(8px);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: 0.4s;
+
+    z-index: 100;
+}
+
+.surprise.show {
+    opacity: 1;
+
+    visibility: visible;
+}
+
+
+/* =================================
+   SURPRISE CARD
+================================= */
+
+.surprise-card {
+    position: relative;
+
+    max-width: 520px;
+
+    width: 100%;
+
+    padding: 45px 35px;
+
+    border-radius: 28px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            145deg,
+            #fff,
+            #fff5fb
+        );
+
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.25);
+
+    transform: scale(0.7) translateY(30px);
+
+    transition: 0.5s;
+}
+
+.surprise.show .surprise-card {
+    transform: scale(1) translateY(0);
+}
+
+
+/* Flower icon */
+
+.surprise-icon {
+    font-size: 55px;
+
+    margin-bottom: 10px;
+}
+
+.small-title {
+    color: #ec4899;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.surprise-card h3 {
+    margin-top: 12px;
+
+    font-size: 32px;
+
+    color: #29233b;
+}
+
+.surprise-text {
+    margin: 20px auto;
+
+    max-width: 430px;
+
+    color: #625d70;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+.thank-you-line {
+    padding: 15px;
+
+    border-radius: 15px;
+
+    background: #fdf2f8;
+
+    color: #be185d;
+
+    font-weight: bold;
+}
+
+
+/* Close button */
+
+.close-surprise {
+    position: absolute;
+
+    right: 18px;
+    top: 18px;
+
+    width: 35px;
+    height: 35px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #f3f4f6;
+
+    color: #29233b;
+
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
+
+/* Continue button */
+
+.continue-btn {
+    margin-top: 25px;
+
+    padding: 14px 24px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: linear-gradient(
+        90deg,
+        #8b5cf6,
+        #ec4899
+    );
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.continue-btn:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(139, 92, 246, 0.3);
+}
+
+
+/* Mobile */
+
+@media (max-width: 500px) {
+
+    .gift-section {
+        padding: 80px 15px;
+    }
+
+    .surprise-card {
+        padding: 40px 22px;
+    }
+
+    .surprise-card h3 {
+        font-size: 26px;
+    }
+
+}
+/* =================================
+   APPRECIATION MESSAGE SECTION
+================================= */
+
+.message-section {
+    min-height: 100vh;
+
+    padding: 100px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 70px;
+
+    background:
+        radial-gradient(
+            circle at top left,
+            #fce7f3,
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at bottom right,
+            #ede9fe,
+            transparent 35%
+        ),
+        #fffaff;
+}
+
+.message-content {
+    width: 100%;
+    max-width: 550px;
+}
+
+.message-content .section-badge {
+    margin-bottom: 20px;
+}
+
+.message-content h2 {
+    font-size: clamp(38px, 5vw, 58px);
+
+    line-height: 1.15;
+
+    color: #29233b;
+
+    margin-bottom: 20px;
+}
+
+.message-content h2 span {
+    display: block;
+
+    background: linear-gradient(
+        90deg,
+        #8b5cf6,
+        #ec4899
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.message-intro {
+    color: #625d70;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    margin-bottom: 35px;
+}
+
+
+/* FORM */
+
+.thank-form {
+    padding: 30px;
+
+    border-radius: 25px;
+
+    background: rgba(255, 255, 255, 0.75);
+
+    border: 1px solid rgba(255, 255, 255, 0.9);
+
+    box-shadow:
+        0 15px 40px rgba(50, 30, 80, 0.08);
+}
+
+.input-group {
+    margin-bottom: 20px;
+
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    color: #433b54;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border: 1px solid #e9dff2;
+
+    border-radius: 13px;
+
+    outline: none;
+
+    background: #fff;
+
+    color: #29233b;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+
+    resize: vertical;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #c084fc;
+
+    box-shadow:
+        0 0 0 4px rgba(192, 132, 252, 0.12);
+}
+
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+    color: #aaa2b5;
+}
+
+
+/* CHARACTER COUNT */
+
+.character-count {
+    text-align: right;
+
+    margin-top: 5px;
+
+    font-size: 12px;
+
+    color: #9991a5;
+}
+
+
+/* SEND BUTTON */
+
+.send-message-btn {
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: linear-gradient(
+        90deg,
+        #8b5cf6,
+        #ec4899
+    );
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.send-message-btn:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 25px rgba(139, 92, 246, 0.3);
+}
+
+
+/* =================================
+   RESULT CARD
+================================= */
+
+.message-result {
+    width: 100%;
+
+    max-width: 430px;
+
+    padding: 45px 35px;
+
+    text-align: center;
+
+    border-radius: 28px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #fff4fa
+        );
+
+    box-shadow:
+        0 20px 50px rgba(50, 30, 80, 0.12);
+
+    border: 1px solid white;
+
+    min-height: 360px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.result-icon {
+    font-size: 55px;
+
+    margin-bottom: 12px;
+}
+
+.result-label {
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    font-weight: bold;
+
+    color: #ec4899;
+}
+
+.message-result h3 {
+    margin-top: 8px;
+
+    font-size: 28px;
+
+    color: #29233b;
+}
+
+.result-divider {
+    margin: 12px 0;
+
+    color: #f59e0b;
+}
+
+.for-teacher {
+    color: #625d70;
+
+    margin-bottom: 20px;
+}
+
+.for-teacher strong {
+    color: #8b5cf6;
+}
+
+.result-message {
+    font-family: Georgia, serif;
+
+    font-style: italic;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #433b54;
+
+    min-height: 70px;
+}
+
+.result-footer {
+    margin-top: 25px;
+
+    padding-top: 15px;
+
+    width: 100%;
+
+    border-top: 1px solid #f1ddeb;
+
+    color: #be185d;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 850px) {
+
+    .message-section {
+        flex-direction: column;
+
+        gap: 45px;
+    }
+
+    .message-content {
+        max-width: 600px;
+    }
+
+    .message-result {
+        max-width: 600px;
+    }
+
+}
+/* =================================
+   APPRECIATION POPUP
+================================= */
+
+.appreciation-modal {
+    position: fixed;
+
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(41, 35, 59, 0.65);
+
+    backdrop-filter: blur(8px);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.3s;
+
+    z-index: 999;
+}
+
+.appreciation-modal.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* POPUP BOX */
+
+.appreciation-box {
+    position: relative;
+
+    width: 100%;
+    max-width: 500px;
+
+    padding: 40px;
+
+    border-radius: 28px;
+
+    background: linear-gradient(
+        145deg,
+        #ffffff,
+        #fff5fb
+    );
+
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.25);
+
+    text-align: center;
+
+    transform: scale(0.75) translateY(30px);
+
+    transition: 0.4s;
+}
+
+.appreciation-modal.show .appreciation-box {
+    transform: scale(1) translateY(0);
+}
+
+
+/* CLOSE */
+
+.modal-close {
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    width: 35px;
+    height: 35px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #f3f4f6;
+
+    font-size: 24px;
+
+    cursor: pointer;
+
+    color: #29233b;
+}
+
+
+/* ICON */
+
+.modal-icon {
+    font-size: 50px;
+
+    margin-bottom: 10px;
+}
+
+
+/* LABEL */
+
+.modal-label {
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    font-weight: bold;
+
+    color: #ec4899;
+}
+
+
+/* HEADING */
+
+.appreciation-box h2 {
+    margin-top: 10px;
+
+    font-size: 30px;
+
+    color: #29233b;
+}
+
+.appreciation-box h2 span {
+    background: linear-gradient(
+        90deg,
+        #8b5cf6,
+        #ec4899
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* INTRO */
+
+.modal-intro {
+    margin: 12px 0 25px;
+
+    color: #625d70;
+}
+
+
+/* FORM */
+
+#appreciationForm {
+    text-align: left;
+}
+
+#appreciationForm label {
+    display: block;
+
+    margin: 15px 0 7px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    color: #433b54;
+}
+
+#appreciationForm input,
+#appreciationForm textarea {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #e7d9ef;
+
+    border-radius: 12px;
+
+    outline: none;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    resize: vertical;
+}
+
+#appreciationForm input:focus,
+#appreciationForm textarea:focus {
+    border-color: #a855f7;
+
+    box-shadow:
+        0 0 0 4px rgba(168, 85, 247, 0.1);
+}
+
+
+/* COUNT */
+
+.modal-count {
+    text-align: right;
+
+    font-size: 12px;
+
+    color: #9991a5;
+
+    margin-top: 5px;
+}
+
+
+/* SEND */
+
+.modal-send {
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: linear-gradient(
+        90deg,
+        #8b5cf6,
+        #ec4899
+    );
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.modal-send:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(139, 92, 246, 0.3);
+}
+
+
+/* SUCCESS */
+
+.appreciation-success {
+    display: none;
+
+    text-align: center;
+}
+
+.appreciation-success.show {
+    display: block;
+}
+
+#appreciationForm.hide {
+    display: none;
+}
+
+.success-icon {
+    font-size: 55px;
+}
+
+.appreciation-success h3 {
+    font-size: 30px;
+
+    color: #29233b;
+
+    margin: 10px 0;
+}
+
+.success-for {
+    color: #625d70;
+
+    margin: 10px 0 20px;
+}
+
+.success-for strong {
+    color: #8b5cf6;
+}
+
+.success-message {
+    padding: 20px;
+
+    border-radius: 16px;
+
+    background: #fdf2f8;
+
+    color: #433b54;
+
+    font-family: Georgia, serif;
+
+    font-style: italic;
+
+    line-height: 1.6;
+}
+
+.success-footer {
+    margin-top: 20px;
+
+    color: #be185d;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+.modal-done {
+    margin-top: 15px;
+
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background: #f3e8ff;
+
+    color: #7c3aed;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 500px) {
+
+    .appreciation-box {
+        padding: 35px 22px;
+    }
+
+    .appreciation-box h2 {
+        font-size: 25px;
+    }
+
+}

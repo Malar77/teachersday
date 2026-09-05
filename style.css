@@ -1476,14 +1476,10 @@ h1 span {
 
 /* MOBILE */
 
-@media (max-width: 500px) {
-
-    .appreciation-box {
-        padding: 35px 22px;
+@media (max-width: 600px) {
+    .hero {
+        background-size: auto 100%;
+        background-position: center top;
+        background-repeat: no-repeat;
     }
-
-    .appreciation-box h2 {
-        font-size: 25px;
-    }
-
 }

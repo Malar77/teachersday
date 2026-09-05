@@ -1478,9 +1478,9 @@ h1 span {
 
 @media (max-width: 600px) {
     .hero {
-        background-size: contain;
+        background-image: url("images/teachers.png") !important;
+        background-size: cover;
         background-position: center top;
         background-repeat: no-repeat;
-        background-color: #fceef7;
     }
 }
